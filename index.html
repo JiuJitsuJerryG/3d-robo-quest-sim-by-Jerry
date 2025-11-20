@@ -23,66 +23,6 @@
         /* Header */
         header { padding: 15px; background: linear-gradient(90deg, rgba(0,0,0,0.8), transparent); display: flex; justify-content: space-between; align-items: center; pointer-events: auto; border-bottom: 1px solid var(--primary); }
         h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); text-shadow: 0 0 10px var(--primary); }
-    [[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQGo6Fybs1mHVuIAoIArGLwjj28KfGChBGcvlGvRadv1uzKbK98E8e2Ek8GjcwTeW1pbHsP3q8DyOMkKZPmOuxb1RMPChM3agZiLLwUNBTnDEdNd1ZO1ZgLD3qgB0tI4W_7mPI8vn1Tzlk0%3D)] so the robot can easily reach the floor to grab the cube.
-
-Save this code as `index.html` and open it.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboQuest: 3D Arm Simulator</title>
-    <style>
-        :root {
-            --primary: #00ffcc;
-            --secondary: #ff00ff;
-            --bg: #0b0d17;
-            --panel: rgba(20, 25, 40, 0.85);
-            --text: #e0e6ed;
-            --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body { margin: 0; overflow: hidden; background: var(--bg); color: var(--text); font-family: var(--font); }
-        canvas { display: block; outline: none; }
-
-        /* UI Overlay */
-        #ui-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; display: flex; flex-direction: column; justify-content: space-between; }
-        
-        /* Header */
-        header { padding: 15px; background: linear-gradient(90deg, rgba(0,0,0,0.8), transparent); display: flex; justify-content: space-between; align-items: center; pointer-events: auto; border-bottom: 1px solid var(--primary); }
-        h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); text-shadow: 0 0 10px var(--primary); }
-    [[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQEsPAjsKQcxMVN_sHp5rSgdRrLVd6sw6USD6dhIO6WUHNGtrdgM3CrtJZQFKbT2zXLyy0xo5JGP6RIQN7YcaTPYVBnoiG4_SKDSUssBy8MOv8DaPXeg-5WQuU7bMjOBQPf641zP1zA%3D)][[2](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQGVReH3ZYE44y09ati3LsmR1oRO9gvT5SY7K0kATLOp1BNvJb1hB1LBMUGfoC7ZXXQPEajctG7phPiIqAH7Xc5TJHoXd5DA5vpd2R1NeBc8JdoapOPUwQJsk168l2XEt--KQS_vrZvPZR5D3gZ1Kmp98Nk7xaK82KkCmjqLb_yYwHF5N3_5pYdb7a0lalEwPbDl40y2mlkczgAIuzOJ86lVpDOaCxvO)] so the robot can easily reach the floor to grab the cube.
-
-Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQH8SiHAPLiFbbWpLv29Zh8ePoQFN4Gy-63ygRAaPskhl8-u-qUD5kx07atfRug1UhsjjfTErlfScg51YCzPIAViP7zEV3VOEOglCntuZJmzkxk5N5EnASVRPRGqrEuoGqbUDKfiz7E%3D)]nd open it.
-
-```html[[2](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQGVReH3ZYE44y09ati3LsmR1oRO9gvT5SY7K0kATLOp1BNvJb1hB1LBMUGfoC7ZXXQPEajctG7phPiIqAH7Xc5TJHoXd5DA5vpd2R1NeBc8JdoapOPUwQJsk168l2XEt--KQS_vrZvPZR5D3gZ1Kmp98Nk7xaK82KkCmjqLb_yYwHF5N3_5pYdb7a0lalEwPbDl40y2mlkczgAIuzOJ86lVpDOaCxvO)][[3](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQH8SiHAPLiFbbWpLv29Zh8ePoQFN4Gy-63ygRAaPskhl8-u-qUD5kx07atfRug1UhsjjfTErlfScg51YCzPIAViP7zEV3VOEOglCntuZJmzkxk5N5EnASVRPRGqrEuoGqbUDKfiz7E%3D)]
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboQuest: 3D Arm Simulator</title>
-    <style>
-        :root {
-            --primary: #00ffcc;
-            --secondary: #ff00ff;
-            --bg: #0b0d17;
-            --panel: rgba(20, 25, 40, 0.85);
-            --text: #e0e6ed;
-            --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body { margin: 0; overflow: hidden; background: var(--bg); color: var(--text); font-family: var(--font); }
-        canvas { display: block; outline: none; }
-
-        /* UI Overlay */
-        #ui-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; display: flex; flex-direction: column; justify-content: space-between; }
-        
-        /* Header */
-        header { padding: 15px; background: linear-gradient(90deg, rgba(0,0,0,0.8), transparent); display: flex; justify-content: space-between; align-items: center; pointer-events: auto; border-bottom: 1px solid var(--primary); }
-        h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); text-shadow: 0 0 10px var(--primary); }
         
         .stats { display: flex; gap: 20px; font-weight: bold; }
         .stat-box { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; border: 1px solid var(--secondary); color: var(--secondary); }
@@ -127,9 +67,9 @@ Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%
         /* Sensor Overlay */
         .sensor-readout { position: absolute; bottom: 20px; right: 20px; background: rgba(0,0,0,0.8); color: #0f0; font-family: 'Courier New', monospace; padding: 10px; border: 1px solid #0f0; pointer-events: none; font-size: 12px; }
         
-        /* Help Text for Keys */
-        .key-help { font-size: 0.7rem; color: #aaa; margin-top: 5px; display:flex; flex-wrap:wrap; gap:10px;}
-        .key-badge { border: 1px solid #555; padding: 2px 4px; border-radius: 3px; background: #222; color: white; font-weight: bold;}
+        /* Key Help */
+        .key-help { font-size: 0.7rem; color: #aaa; margin-top: 5px; display:flex; flex-wrap:wrap; gap:5px;}
+        .key-badge { border: 1px solid #555; padding: 2px 4px; border-radius: 3px; background: #222; color: white; font-weight: bold; font-size: 0.6rem; }
     </style>
     <!-- Import Three.js and OrbitControls as ES Modules -->
     <script type="importmap">
@@ -176,7 +116,7 @@ Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%
         </div>
 
         <div id="manual-controls" class="panel-section">
-            <h3>Manual Control (DOF)</h3>
+            <h3>Manual Control</h3>
             <div class="key-help">
                 <div><span class="key-badge">A</span><span class="key-badge">D</span> Base</div>
                 <div><span class="key-badge">W</span><span class="key-badge">S</span> Shoulder</div>
@@ -185,7 +125,7 @@ Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%
                 <div><span class="key-badge">Q</span><span class="key-badge">E</span> Roll</div>
                 <div><span class="key-badge">SPACE</span> Grab</div>
             </div>
-            <hr style="border-color:#333; opacity:0.3;">
+            <hr style="border-color:rgba(255,255,255,0.1);">
             
             <div class="control-group">
                 <label>Base Rotation (J1) <span id="val-base">0°</span></label>
@@ -197,12 +137,10 @@ Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%
             </div>
             <div class="control-group">
                 <label>Elbow (J3) <span id="val-elbow">0°</span></label>
-                <!-- Expanded range to allow better reach -->
                 <input type="range" min="-140" max="140" value="0" id="slider-elbow">
             </div>
             <div class="control-group">
                 <label>Wrist Pitch (J4) <span id="val-wrist">0°</span></label>
-                <!-- Expanded range for better tilt -->
                 <input type="range" min="-110" max="110" value="0" id="slider-wrist">
             </div>
             <div class="control-group">
@@ -528,7 +466,7 @@ Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%
             if (!gripperOpen && !heldObject) {
                 // Try to grab
                 for (let obj of targets) {
-                    if (worldPos.distanceTo(obj.position) < 0.6) {
+                    if (worldPos.distanceTo(obj.position) < 0.8) { // Increased grab range slightly
                         // GRAB!
                         heldObject = obj;
                         // Parenting logic for Three.js: attach object to gripper without jumping
@@ -641,84 +579,4 @@ Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%
             
             for(let i=0; i<count; i++) {
                 positions.push(3, 2, 0); // Start at bin
-                colors.push(Math.random(), Math.random(), Math.random());
-            }
-            
-            geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
-            geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
-            
-            const material = new THREE.PointsMaterial({ size: 0.1, vertexColors: true });
-            const particles = new THREE.Points(geometry, material);
-            scene.add(particles);
-
-            // Animate particles
-            const velocities = [];
-            for(let i=0; i<count; i++) velocities.push({
-                x: (Math.random()-0.5)*0.2,
-                y: (Math.random())*0.2,
-                z: (Math.random()-0.5)*0.2
-            });
-
-            let frame = 0;
-            function tick() {
-                const pos = particles.geometry.attributes.position.array;
-                for(let i=0; i<count; i++) {
-                    pos[i*3] += velocities[i].x;
-                    pos[i*3+1] += velocities[i].y;
-                    pos[i*3+2] += velocities[i].z;
-                    velocities[i].y -= 0.005; // Gravity
-                }
-                particles.geometry.attributes.position.needsUpdate = true;
-                frame++;
-                if(frame < 100) requestAnimationFrame(tick);
-                else scene.remove(particles);
-            }
-            tick();
-        }
-
-        // --- UI & PROGRAMMING ---
-        window.setMode = (mode) => {
-            document.getElementById('manual-controls').style.display = mode === 'manual' ? 'block' : 'none';
-            document.getElementById('code-controls').style.display = mode === 'code' ? 'block' : 'none';
-        };
-
-        window.addBlock = (type) => {
-            const area = document.getElementById('block-area');
-            const el = document.createElement('div');
-            el.className = 'code-block';
-            el.innerText = type.replace('_', ' ').toUpperCase();
-            el.dataset.type = type;
-            el.onclick = () => el.remove(); // Click to delete
-            area.appendChild(el);
-        };
-
-        window.clearCode = () => {
-            document.getElementById('block-area').innerHTML = '<em style="color:#888; text-align:center;">Drag blocks or Click to Add</em>';
-        };
-
-        window.runCode = () => {
-            if(isExecutingCode) return;
-            const blocks = document.querySelectorAll('#block-area .code-block');
-            if(blocks.length === 0) return;
-
-            isExecutingCode = true;
-            let index = 0;
-
-            function executeStep() {
-                if (index >= blocks.length) {
-                    isExecutingCode = false;
-                    return;
-                }
-
-                const type = blocks[index].dataset.type;
-                // highlight current block
-                blocks.forEach(b => b.style.borderLeft = "3px solid var(--secondary)");
-                blocks[index].style.borderLeft = "3px solid white";
-
-                // Action Logic
-                const stepSize = 20;
-                
-                if(type === 'base_left') updateSlider('slider-base', 20);
-                if(type === 'base_right') updateSlider('slider-base', -20);
-                if(type === 'lower') updateSlider('slider-shoulder', 20);
-                if(type === 'raise') updateSlider('slider-shoulder
+                colors.push
