@@ -23,6 +23,66 @@
         /* Header */
         header { padding: 15px; background: linear-gradient(90deg, rgba(0,0,0,0.8), transparent); display: flex; justify-content: space-between; align-items: center; pointer-events: auto; border-bottom: 1px solid var(--primary); }
         h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); text-shadow: 0 0 10px var(--primary); }
+    [[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQGo6Fybs1mHVuIAoIArGLwjj28KfGChBGcvlGvRadv1uzKbK98E8e2Ek8GjcwTeW1pbHsP3q8DyOMkKZPmOuxb1RMPChM3agZiLLwUNBTnDEdNd1ZO1ZgLD3qgB0tI4W_7mPI8vn1Tzlk0%3D)] so the robot can easily reach the floor to grab the cube.
+
+Save this code as `index.html` and open it.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboQuest: 3D Arm Simulator</title>
+    <style>
+        :root {
+            --primary: #00ffcc;
+            --secondary: #ff00ff;
+            --bg: #0b0d17;
+            --panel: rgba(20, 25, 40, 0.85);
+            --text: #e0e6ed;
+            --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body { margin: 0; overflow: hidden; background: var(--bg); color: var(--text); font-family: var(--font); }
+        canvas { display: block; outline: none; }
+
+        /* UI Overlay */
+        #ui-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; display: flex; flex-direction: column; justify-content: space-between; }
+        
+        /* Header */
+        header { padding: 15px; background: linear-gradient(90deg, rgba(0,0,0,0.8), transparent); display: flex; justify-content: space-between; align-items: center; pointer-events: auto; border-bottom: 1px solid var(--primary); }
+        h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); text-shadow: 0 0 10px var(--primary); }
+    [[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQEsPAjsKQcxMVN_sHp5rSgdRrLVd6sw6USD6dhIO6WUHNGtrdgM3CrtJZQFKbT2zXLyy0xo5JGP6RIQN7YcaTPYVBnoiG4_SKDSUssBy8MOv8DaPXeg-5WQuU7bMjOBQPf641zP1zA%3D)][[2](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQGVReH3ZYE44y09ati3LsmR1oRO9gvT5SY7K0kATLOp1BNvJb1hB1LBMUGfoC7ZXXQPEajctG7phPiIqAH7Xc5TJHoXd5DA5vpd2R1NeBc8JdoapOPUwQJsk168l2XEt--KQS_vrZvPZR5D3gZ1Kmp98Nk7xaK82KkCmjqLb_yYwHF5N3_5pYdb7a0lalEwPbDl40y2mlkczgAIuzOJ86lVpDOaCxvO)] so the robot can easily reach the floor to grab the cube.
+
+Save this code as `index.html` a[[3](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQH8SiHAPLiFbbWpLv29Zh8ePoQFN4Gy-63ygRAaPskhl8-u-qUD5kx07atfRug1UhsjjfTErlfScg51YCzPIAViP7zEV3VOEOglCntuZJmzkxk5N5EnASVRPRGqrEuoGqbUDKfiz7E%3D)]nd open it.
+
+```html[[2](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQGVReH3ZYE44y09ati3LsmR1oRO9gvT5SY7K0kATLOp1BNvJb1hB1LBMUGfoC7ZXXQPEajctG7phPiIqAH7Xc5TJHoXd5DA5vpd2R1NeBc8JdoapOPUwQJsk168l2XEt--KQS_vrZvPZR5D3gZ1Kmp98Nk7xaK82KkCmjqLb_yYwHF5N3_5pYdb7a0lalEwPbDl40y2mlkczgAIuzOJ86lVpDOaCxvO)][[3](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQH8SiHAPLiFbbWpLv29Zh8ePoQFN4Gy-63ygRAaPskhl8-u-qUD5kx07atfRug1UhsjjfTErlfScg51YCzPIAViP7zEV3VOEOglCntuZJmzkxk5N5EnASVRPRGqrEuoGqbUDKfiz7E%3D)]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboQuest: 3D Arm Simulator</title>
+    <style>
+        :root {
+            --primary: #00ffcc;
+            --secondary: #ff00ff;
+            --bg: #0b0d17;
+            --panel: rgba(20, 25, 40, 0.85);
+            --text: #e0e6ed;
+            --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body { margin: 0; overflow: hidden; background: var(--bg); color: var(--text); font-family: var(--font); }
+        canvas { display: block; outline: none; }
+
+        /* UI Overlay */
+        #ui-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; display: flex; flex-direction: column; justify-content: space-between; }
+        
+        /* Header */
+        header { padding: 15px; background: linear-gradient(90deg, rgba(0,0,0,0.8), transparent); display: flex; justify-content: space-between; align-items: center; pointer-events: auto; border-bottom: 1px solid var(--primary); }
+        h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); text-shadow: 0 0 10px var(--primary); }
         
         .stats { display: flex; gap: 20px; font-weight: bold; }
         .stat-box { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; border: 1px solid var(--secondary); color: var(--secondary); }
@@ -66,6 +126,10 @@
 
         /* Sensor Overlay */
         .sensor-readout { position: absolute; bottom: 20px; right: 20px; background: rgba(0,0,0,0.8); color: #0f0; font-family: 'Courier New', monospace; padding: 10px; border: 1px solid #0f0; pointer-events: none; font-size: 12px; }
+        
+        /* Help Text for Keys */
+        .key-help { font-size: 0.7rem; color: #aaa; margin-top: 5px; display:flex; flex-wrap:wrap; gap:10px;}
+        .key-badge { border: 1px solid #555; padding: 2px 4px; border-radius: 3px; background: #222; color: white; font-weight: bold;}
     </style>
     <!-- Import Three.js and OrbitControls as ES Modules -->
     <script type="importmap">
@@ -113,6 +177,16 @@
 
         <div id="manual-controls" class="panel-section">
             <h3>Manual Control (DOF)</h3>
+            <div class="key-help">
+                <div><span class="key-badge">A</span><span class="key-badge">D</span> Base</div>
+                <div><span class="key-badge">W</span><span class="key-badge">S</span> Shoulder</div>
+                <div><span class="key-badge">↑</span><span class="key-badge">↓</span> Elbow</div>
+                <div><span class="key-badge">←</span><span class="key-badge">→</span> Wrist</div>
+                <div><span class="key-badge">Q</span><span class="key-badge">E</span> Roll</div>
+                <div><span class="key-badge">SPACE</span> Grab</div>
+            </div>
+            <hr style="border-color:#333; opacity:0.3;">
+            
             <div class="control-group">
                 <label>Base Rotation (J1) <span id="val-base">0°</span></label>
                 <input type="range" min="-180" max="180" value="0" id="slider-base">
@@ -123,11 +197,13 @@
             </div>
             <div class="control-group">
                 <label>Elbow (J3) <span id="val-elbow">0°</span></label>
-                <input type="range" min="-120" max="120" value="0" id="slider-elbow">
+                <!-- Expanded range to allow better reach -->
+                <input type="range" min="-140" max="140" value="0" id="slider-elbow">
             </div>
             <div class="control-group">
                 <label>Wrist Pitch (J4) <span id="val-wrist">0°</span></label>
-                <input type="range" min="-90" max="90" value="0" id="slider-wrist">
+                <!-- Expanded range for better tilt -->
+                <input type="range" min="-110" max="110" value="0" id="slider-wrist">
             </div>
             <div class="control-group">
                 <label>Wrist Roll (J5) <span id="val-roll">0°</span></label>
@@ -168,7 +244,7 @@
             <h3>Help & Info</h3>
             <button class="btn" onclick="showTutorial()">Show Tutorial</button>
             <div style="font-size:0.7rem; margin-top:10px; color:#aaa;">
-                Controls: WASD to move camera target, Mouse Drag to orbit.
+                Mouse: Left Click to Drag Camera, Scroll to Zoom.
             </div>
         </div>
     </aside>
@@ -181,9 +257,12 @@
         <p id="modal-body" style="line-height:1.5; color:#ddd;">
             Welcome to the robo-workshop. Your goal is to master the 5-Degree-of-Freedom (5DOF) robotic arm.
             <br><br>
-            <strong>Challenge 1:</strong> Pick up the Glowing Cube and place it in the Red Bin.
+            <strong>Controls:</strong><br>
+            WASD = Base & Shoulder<br>
+            Arrows = Elbow & Wrist<br>
+            Space = Grab
             <br><br>
-            Use the sliders or code blocks to control the joints.
+            <strong>Challenge 1:</strong> Pick up the Glowing Cube and place it in the Red Bin.
         </p>
         <button class="btn" style="width:100%" onclick="closeModal()">START SIMULATION</button>
     </div>
@@ -416,6 +495,8 @@
             dom.vals.base.innerText = dom.sliders.base.value + "°";
             dom.vals.shoulder.innerText = dom.sliders.shoulder.value + "°";
             dom.vals.elbow.innerText = dom.sliders.elbow.value + "°";
+            dom.vals.wrist.innerText = dom.sliders.wrist.value + "°";
+            dom.vals.roll.innerText = dom.sliders.roll.value + "°";
             
             // Collision/Grip Logic
             checkGrip();
@@ -493,6 +574,9 @@
             dom.sliders.base.value = 0;
             dom.sliders.shoulder.value = 0;
             dom.sliders.elbow.value = 0;
+            dom.sliders.wrist.value = 0;
+            dom.sliders.roll.value = 0;
+
             gripperOpen = true;
             if(heldObject) { scene.attach(heldObject); heldObject = null; }
 
@@ -634,128 +718,7 @@
                 // Action Logic
                 const stepSize = 20;
                 
-                if(type === 'base_left') dom.sliders.base.value = parseInt(dom.sliders.base.value) + stepSize;
-                if(type === 'base_right') dom.sliders.base.value = parseInt(dom.sliders.base.value) - stepSize;
-                if(type === 'lower') dom.sliders.shoulder.value = parseInt(dom.sliders.shoulder.value) + stepSize;
-                if(type === 'raise') dom.sliders.shoulder.value = parseInt(dom.sliders.shoulder.value) - stepSize;
-                if(type === 'grip') toggleGripper();
-
-                playSound('blip');
-                index++;
-                setTimeout(executeStep, 800); // Wait for movement
-            }
-            executeStep();
-        };
-
-        // --- EVENTS ---
-        function setupUIListeners() {
-            document.getElementById('btn-grip-toggle').onclick = toggleGripper;
-            
-            document.addEventListener('keydown', (e) => {
-                if (e.code === 'Space') toggleGripper();
-                // WASD for base
-                if (e.key === 'a') dom.sliders.base.value = parseInt(dom.sliders.base.value) + 5;
-                if (e.key === 'd') dom.sliders.base.value = parseInt(dom.sliders.base.value) - 5;
-                if (e.key === 'w') dom.sliders.shoulder.value = parseInt(dom.sliders.shoulder.value) + 5;
-                if (e.key === 's') dom.sliders.shoulder.value = parseInt(dom.sliders.shoulder.value) - 5;
-            });
-
-            document.getElementById('skin-select').addEventListener('change', (e) => {
-                const theme = e.target.value;
-                let color = 0x333333;
-                if(theme === 'industrial') color = 0xff6600;
-                if(theme === 'sci-fi') color = 0x333333;
-                if(theme === 'stealth') color = 0x111111;
-
-                robot.root.traverse((child) => {
-                    if(child.isMesh && child.name !== 'joint') {
-                         // Simple way to re-skin body parts
-                         if(child.geometry.type === "BoxGeometry") child.material.color.setHex(color);
-                    }
-                });
-            });
-
-            document.getElementById('mobile-toggle').onclick = () => {
-                const side = document.getElementById('sidebar');
-                side.classList.toggle('open');
-            };
-        }
-
-        window.showTutorial = () => {
-            document.getElementById('modal').classList.add('active');
-            document.getElementById('modal-title').innerText = "How to Play";
-            document.getElementById('modal-body').innerHTML = `
-                <ul style="text-align:left; padding-left:20px;">
-                    <li><strong>Base/Shoulder/Elbow:</strong> Move the main arm segments.</li>
-                    <li><strong>Wrist:</strong> Orient the gripper.</li>
-                    <li><strong>Gripper:</strong> Open/Close to grab objects.</li>
-                    <li><strong>Goal:</strong> Move pink cubes to the red zone.</li>
-                </ul>
-                <p><strong>Tip:</strong> Try the "Coder" mode to automate movements!</p>
-            `;
-        };
-
-        window.closeModal = () => {
-            document.getElementById('modal').classList.remove('active');
-            // Init audio context on user interaction
-            if (audioCtx.state === 'suspended') audioCtx.resume();
-        };
-
-        function showNotification(msg) {
-            const notif = document.getElementById('notification');
-            notif.innerText = msg;
-            notif.style.opacity = 1;
-            setTimeout(() => notif.style.opacity = 0, 3000);
-        }
-
-        function onWindowResize() {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        }
-
-        // --- AUDIO ---
-        function playSound(type) {
-            if(!audioCtx) return;
-            const osc = audioCtx.createOscillator();
-            const gain = audioCtx.createGain();
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-
-            if (type === 'grab') {
-                osc.type = 'square';
-                osc.frequency.setValueAtTime(150, audioCtx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(40, audioCtx.currentTime + 0.1);
-                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.1);
-            } else if (type === 'success') {
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(400, audioCtx.currentTime);
-                osc.frequency.linearRampToValueAtTime(600, audioCtx.currentTime + 0.1);
-                osc.frequency.linearRampToValueAtTime(1000, audioCtx.currentTime + 0.3);
-                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
-                gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.5);
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.5);
-            } else if (type === 'blip') {
-                osc.type = 'triangle';
-                osc.frequency.setValueAtTime(800, audioCtx.currentTime);
-                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
-                gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.1);
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.1);
-            }
-        }
-
-        // --- RENDER LOOP ---
-        function animate() {
-            requestAnimationFrame(animate);
-            updatePhysics();
-            controls.update();
-            renderer.render(scene, camera);
-        }
-    </script>
-</body>
-</html>
+                if(type === 'base_left') updateSlider('slider-base', 20);
+                if(type === 'base_right') updateSlider('slider-base', -20);
+                if(type === 'lower') updateSlider('slider-shoulder', 20);
+                if(type === 'raise') updateSlider('slider-shoulder
